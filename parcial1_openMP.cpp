@@ -283,8 +283,7 @@ int main(int argc, char* argv[]) {
 
     ImageProcessor temp;
     temp.load(argv[1]);
-    string ext = (temp.getFormat() == "P2") ? ".pgm" : ".ppm";
-    string base_name = argv[2];
+    string ext = (temp.getFormat() == "P2") ? ".pgm" : ".ppm"; //pues para colocrale esa extencion a los archivos de salida
 
     ImageProcessor img;
     img.load(argv[1]);
@@ -303,4 +302,5 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
 
